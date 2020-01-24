@@ -2,7 +2,7 @@
 #include <DallasTemperature.h>
 
 //This Is The Arduino Pin that we are feeding the Data into
-#define ONE_WIRE_BUS 3
+#define ONE_WIRE_BUS 3 //Change if not using pin 3
 
 OneWire oneWire(ONE_WIRE_BUS);
 
