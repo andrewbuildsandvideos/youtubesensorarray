@@ -2,7 +2,7 @@
 #include <DallasTemperature.h>
 
 //This Is The Arduino Pin that we are feeding the Data into
-#define ONE_WIRE_BUS 2
+#define ONE_WIRE_BUS 3
 
 OneWire oneWire(ONE_WIRE_BUS);
 
@@ -10,7 +10,7 @@ DallasTemperature sensors(&oneWire);
 int resT = 12;
 
 //Individual Device Address
-DeviceAddress dallas01={0x28, 0x2F, 0x1D, 0x62, 0x04, 0x00, 0x00, 0x15};
+DeviceAddress dallas01={0x28, 0x50, 0x1D, 0x50, 0x06, 0x00, 0x00, 0xA9};
 
 //Create a time Variable
 unsigned long time;
